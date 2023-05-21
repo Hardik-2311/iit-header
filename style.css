@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Lato';
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-bottom: 1px solid #232323;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+
+.mainheader1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mainheader2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.size {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .4rem;
+    width: 17.5rem;
+}
+
+.size-change {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.dark {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.language-opt {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+span a {
+    color: rgba(35, 35, 35, 1);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.webmail {
+    justify-content: space-between;
+    display: flex;
+    gap: 1rem;
+    font-size: .75rem;
+    font-family: 'Lato';
+    color: rgba(35, 35, 35, 1);
+    padding-top: .5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.g20-logo {
+    width: 100%;
+    max-width: 6rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.roorkee-logo {
+    width: 100%;
+    max-width: 20rem;
+    cursor: pointer;
+}
+
+.search-btn {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.lightmode {
+    color: rgba(0, 0, 0, 1);
+
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 16px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid rgba(26, 118, 187, 1);
+    cursor: pointer;
+}
+
+.darkmode {
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 16px;
+    text-align: center;
+    background-color: rgba(26, 118, 187, 1);
+    border: 2px solid rgba(26, 118, 187, 1);
+    cursor: pointer;
+}
+
+@media(max-width:1024px) {
+    .top {
+        border: none;
+        gap: 4rem;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .hamburger {
+        display: unset;
+    }
+
+    .roorkee-logo {
+        max-width: 18rem;
+    }
+
+    .g20-logo {
+        max-width: 6rem;
+    }
+}
+
+@media(max-width:500px) {
+    .g20-logo {
+        max-width: 5.8rem;
+    }
+
+    .roorkee-logo {
+        max-width: 35rem;
+    }
+}
+
+/* top ends */
+/* bottom starts */
+.menu {
+    width: 100%;
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: .4rem;
+}
+
+.menu ul li {
+    text-transform: uppercase;
+    padding-top: .7rem;
+    cursor: pointer;
+    padding-bottom: .7rem;
+}
+
+.submenu1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.context {
+    position: relative;
+    font-size: .95rem;
+}
+
+.context:hover {
+    background: #f0f1f6;
+
+    position: relative;
+    font-weight: bold;
+}
+
+.submenu .submenu2 {
+    display: none;
+    font-size: 0;
+}
+
+.submenu ul li {
+    text-transform: capitalize;
+}
+
+.submenu1:hover .submenu2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: max-content;
+    background-color: #f0f1f6;
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: .4rem;
+}
+
+.fa-angle-right {
+    display: none;
+    float: right;
+}
+
+.sub-items:hover {
+    font-weight: bold;
+    position: relative;
+    text-decoration: 1.5px underline black;
+}
+
+.sub-items:hover .fa-angle-right {
+    display: unset;
+}
+
+.submenu3 .submenu22 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+/* .submenu22{
+    
+    flex-direction: column;
+    justify-content: end;
+} */
+.submenu2 {
+    position: relative;
+}
+
+.submenu22 div {
+    padding: 0.3rem 0rem 0rem 0rem;
+    font-weight: 100;
+    line-height: 1.4rem;
+}
+
+.sub-items:hover .submenu22 {
+    display: block;
+    position: absolute;
+    margin-left: 12.7rem;
+    top: -0.39rem;
+    background: #f0f1f6;
+    width: 200px;
+    height: max-content;
+    padding: .7rem;
+}
+
+.break{
+    display: none;
+}
+
+.accessibility-dropdown{
+    display: none;
+}
+
+@media(max-width:1200px) {
+    .context {
+        font-size: .85rem;
+    }
+}
+
+@media(max-width:1060) {
+    .context {
+        font-size: 0.78rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .top{
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding-left: 1rem;
+    }
+
+    .fa-chevron-right {
+        font-size: 0;
+    }
+
+    .hamburger{
+        cursor: pointer;
+    }
+
+    .hidden{
+        display: none;
+        transition: .5s ease-in-out;
+    }
+
+    .submenu1:hover .submenu2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* min-width: 200px; */
+        background-color: #f0f1f6;
+        position: absolute;
+        font-size: 1rem;
+        text-align: left;
+        padding-left: .4rem;
+        left: 200px;
+        top: 5.8rem;
+        height: 170%;
+        width: 250px;
+    }
+
+    .sub-items:hover .dropdown {
+        display: none;
+    }
+
+    .fa-chevron-down{
+        display: none;
+    }
+
+    .right {
+        display: unset;
+        float: left;
+        padding-top: .3rem;
+        font-size: .8rem;
+        padding-right: .4rem;
+    }
+    .sub-items:hover{
+        text-decoration: none;
+    }
+
+    .sub-items:hover .submenu22 {
+        display: block;
+        position: relative;
+        margin-left: 0;
+        width: 200px;
+        top: 0;
+    }
+
+    .accessibility-dropdown{
+        display: unset;
+    }
+
+    .dropdown-info{
+        width: 100px;
+        padding-left: 16px;
+        
+    }
+
+    .search-btn{
+        display: none;
+    }
+    .size{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+    .dark{
+        padding-top: 1rem;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+    .size-change{
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+    .language-opt{
+        padding-bottom: .6rem;
+    }
+    .webmail{
+        flex-direction: column;
+        color: #232323;
+    }
+    .break{
+        display: unset;
+        margin-right: 5rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .submenu1:hover .submenu2{
+        top: 5rem;
+        width: 200px;
+    }
+ .sub-items:hover .submenu22{
+    font-size: .8rem;
+    width: 190px;
+ }
+}
+
+@media(max-width:400px){
+    .submenu1:hover .submenu2{
+        top: 4.6rem;
+    }
+    .submenu1:hover .submenu2{
+        width: 100px;
+        left: 150px;
+    }
+    .sub-items:hover{
+        font-size: .8rem;
+    }
+    .context{
+        font-size: .7rem;
+    }
+    .menu ul{
+        width: 150px;
+    }
+}
